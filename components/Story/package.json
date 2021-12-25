@@ -1,6 +1,6 @@
 {
-  "name": "header",
+  "name": "story",
   "version": "1.0.0",
-  "main": "Header.tsx",
+  "main": "Story.tsx",
   "license": "MIT"
 }

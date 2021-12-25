@@ -1,0 +1,44 @@
+.namesContainer {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+.switchButton {
+  display: inline-flex;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.switchButton span {
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.suggestedProfile {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 0.3rem;
+}
+.suggestedProfileName {
+  font-weight: 400;
+  font-size: 14px;
+}
+.suggestedProfileFollowedBy {
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 12px;
+}
+.followButton {
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.followButtonContainer {
+  margin-left: auto;
+}
+
+.suggestionsForYou {
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 14px;
+}

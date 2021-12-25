@@ -1,0 +1,7 @@
+.stories::-webkit-scrollbar{
+    width: 2px;
+}
+.stories{
+    scrollbar-width: thin;
+    scrollbar-color:  #fff #ececec;
+}

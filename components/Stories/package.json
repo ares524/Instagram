@@ -1,0 +1,6 @@
+{
+  "name": "stories",
+  "version": "1.0.0",
+  "main": "Stories.tsx",
+  "license": "MIT"
+}

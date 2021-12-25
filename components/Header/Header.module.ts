@@ -1,8 +1,11 @@
-import styled from '@emotion/styled'
+import styled from "@emotion/styled";
 
 export const Nav = styled.nav`
-  padding: 0.5rem;
   font-size: 1.12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1rem;
 `;
 
 export const Links = styled.div`
