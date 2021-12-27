@@ -1,6 +1,6 @@
 {
-  "name": "header",
+  "name": "footer",
   "version": "1.0.0",
-  "main": "Header.tsx",
+  "main": "Footer.tsx",
   "license": "MIT"
 }
