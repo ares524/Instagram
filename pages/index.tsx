@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>HackArmour</title>
+        <title>Instagram</title>
         {/* TODO: Meta Tags */}
       </Head>
       <Hero>
