@@ -9,14 +9,13 @@ import {
   InputGroup,
   InputLeftElement,
 } from '@chakra-ui/react'
-import { HamburgerIcon, ExternalLinkIcon, SearchIcon } from '@chakra-ui/icons'
-import { FadeInDown } from '../../animations'
-import Link from 'next/link'
+import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons'
 
+import Link from 'next/link'
+import { Nav, Links, Icons, Logo, MobileCollapseMenu } from './Header.module'
+import { FadeInDown } from '../../animations'
 import HomeIcon from '../Icons/HomeIcon'
 import LightIcon from '../Icons/LightIcon'
-
-import { Nav, Links, Icons, Logo, MobileCollapseMenu } from './Header.module'
 import PlusIcon from '../Icons/PlusIcon'
 import CompassIcon from '../Icons/CompassIcon'
 import HeartIcon from '../Icons/HeartIcon'
@@ -38,9 +37,10 @@ const Navbar = () => {
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents="none"
+                    // eslint-disable-next-line react/no-children-prop
                     children={<SearchIcon color="gray.300" />}
                   />
-                  <Input placeholder="Search" isFullWidth size="md" />
+                  <Input placeholder="Search" size="md" />
                 </InputGroup>
               </SimpleGrid>
             </Links>

@@ -20,6 +20,30 @@ export const Homepage = styled.div`
     align-items: center;
     border-bottom: 1px solid #EFEFEF;
     padding: 0.75rem;
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      z-index: 0 !important;
+    }
+    
+    .swiper-slide {
+      background: #fff;
+    
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
   }
 
   .user-detail-info-container {

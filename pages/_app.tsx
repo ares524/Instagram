@@ -1,7 +1,12 @@
-import '../styles/globals.css'
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react'
+import dynamic from 'next/dynamic'
 import type { AppProps } from 'next/app'
-import Navbar from '../components/Header/Header'
+// import Navbar from '../components/Header/Header'
+import '../styles/globals.css'
+
+const NavBarWithNoSSR = dynamic(import('../components/Header/Header'), {
+  ssr: false
+})
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -14,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={theme}>
-      <Navbar />
+      <NavBarWithNoSSR />
       <Component {...pageProps} />
     </ChakraProvider>)
 }
