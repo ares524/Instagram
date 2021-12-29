@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { FadeInDown } from '../animations'
+import Footer from '../components/Footer/Footer'
 import DetailIcon from '../components/Icons/DetailIcon'
 import EmojiIcon from '../components/Icons/EmojiIcon'
 import FavIcon from '../components/Icons/FavIcon'
@@ -46,6 +47,26 @@ const Home: NextPage = () => {
       name: 'douglas'
     }
   ]
+
+  const followers = [
+    {
+      url: 'images/user/1.png',
+      name: 'terrylucas'
+    },
+    {
+      url: 'images/user/2.png',
+      name: 'laura'
+    },
+    {
+      url: 'images/user/3.png',
+      name: 'john'
+    },
+    {
+      url: 'images/user/4.png',
+      name: 'douglas'
+    }
+  ]
+
   return (
     <div>
       <Head>
@@ -54,7 +75,7 @@ const Home: NextPage = () => {
       </Head>
       <Container maxW="container.xl" py="27">
         <FadeInDown>
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacingX="1.75rem" spacingY={{ base: '8', md: '14' }}>
+          <SimpleGrid columns={{ base: 1, md: 3, lg: 3 }} spacingX="1.75rem" spacingY={{ base: '8', md: '14' }}>
             <Homepage>
               <ChakraStat
                 px={{ base: 4, sm: 6 }}
@@ -88,7 +109,7 @@ const Home: NextPage = () => {
                   </Flex>
                 </Box>
 
-                <Image src='images/user/1.jpg' objectFit="cover" alt='user'/>
+                <Image src='images/user/1.jpg' objectFit="cover" alt='user' width='100%'/>
                 
                 <Box as="section" className="user-detail-info-footer">
                   <Flex align="center">
@@ -130,9 +151,60 @@ const Home: NextPage = () => {
             </Homepage>
 
             <Network>
-              <Text color={'gray.500'} fontSize={'sm'}>
-                Right
-              </Text>
+              <Box as="section" className="network-header">
+                <Flex align="center">
+                  <Flex align="center" >
+                    <Image src="/images/user/4.png" rounded="full" mx="auto" objectFit="cover" alt='user' />
+                    <Box ml="3">
+                      <Flex align="center">
+                        <p className='userId'> shirleyromero </p>
+                      </Flex>
+                      <p className='username'>Shirley Romero</p>
+                    </Box>
+                  </Flex>
+                  <Spacer />
+                  <Box  >
+                    <p className='switch-button'>Switch</p>
+                  </Box>
+                </Flex>
+              </Box>
+
+              <Box as="section" className="suggestion-section">
+                <Flex align="center">
+                  <p className='suggestion-header-title'>
+                    Suggestions for you
+                  </p>
+                  <Spacer />
+                  <p className='see-all-btn'>
+                    See All
+                  </p>
+                </Flex>
+                <Stack spacing={3} py="15">
+                  {followers.map((follower, index) => {
+                    return (
+                      <Flex align="center" key={index}>
+                        <Flex align="center" >
+                          <Image src={follower.url} rounded="full" mx="auto" width={10} height={10} objectFit="cover" alt='user' />
+                          <Box ml="3">
+                            <Flex align="center">
+                              <p className='userId'> {follower.name} </p>
+                            </Flex>
+                            <p className='status'>Followed by {follower.name} + 2 more</p>
+                          </Box>
+                        </Flex>
+                        <Spacer />
+                        <Box>
+                          <p className='follow-button'>Follow</p>
+                        </Box>
+                      </Flex>
+                    )
+                  })}
+                </Stack>
+              </Box>
+              
+              <Box as="section" className="footer-section">
+                <Footer />
+              </Box>
             </Network>
           </SimpleGrid>
         </FadeInDown>

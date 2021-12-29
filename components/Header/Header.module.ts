@@ -5,6 +5,10 @@ export const Nav = styled.nav`
   padding: 0.5rem;
   font-size: 1.12rem;
   border-bottom: 1px solid #DBDBDB;
+
+  .search-input {
+    width: 100%;
+  }
 `;
 
 export const Links = styled.div`
@@ -14,6 +18,8 @@ export const Links = styled.div`
   @media all and (max-width: 62rem) {
     display: none !important;
   }
+
+  
 `;
 
 export const Icons = styled.div`
@@ -34,7 +40,7 @@ export const Logo = styled.div`
   font-size: 1.4rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   cursor: pointer;
 `;
 

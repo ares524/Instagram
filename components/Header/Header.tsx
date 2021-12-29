@@ -33,7 +33,7 @@ const Navbar = () => {
                 <img src="/images/Logo.png" alt="LOGO" />
               </Logo>
             </Link>
-            <Links className="text-2">
+            <Links className="text-2 search-input">
               <SimpleGrid spacing={10}>
                 <InputGroup>
                   <InputLeftElement
@@ -49,7 +49,7 @@ const Navbar = () => {
               <LightIcon />
               <PlusIcon />
               <CompassIcon />
-              <HeartIcon />
+              <HeartIcon size='sm' />
               <AvatarIcon />
             </Icons>
             <MobileCollapseMenu>
@@ -65,7 +65,7 @@ const Navbar = () => {
                   <LightIcon />
                   <PlusIcon />
                   <CompassIcon />
-                  <HeartIcon />
+                  <HeartIcon size='sm' />
                 </MenuList>
               </Menu>
             </MobileCollapseMenu>

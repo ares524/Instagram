@@ -7,7 +7,8 @@ export const Break = styled.br`
 `
 
 export const Homepage = styled.div`
-  // border: 1px solid #DBDBDB;
+  grid-column: span 2;
+
   .chakra-stat {
     padding-inline-start: 0rem !important;
     padding-inline-end: 0rem !important;
@@ -109,6 +110,91 @@ export const Homepage = styled.div`
 `
 
 export const Network = styled.div`
+  margin: 1.5rem 0.5rem;
+  .network-header {
+    .userId {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      text-transform: lowercase;
+      color: #262626;
+    }
+    .username {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      text-transform: capitalize;
+      color: #8E8E8E;
+      padding-top: 0.5rem;
+    }
+    .switch-button {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      text-transform: capitalize;
+      color: #0095F6;
+    }
+  }
+
+  .suggestion-section {
+    padding: 1.5rem 0rem;
+    .suggestion-header-title {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: #8E8E8E;
+    }
+
+    .see-all-btn {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: capitalize;
+      color: #262626;
+    }
+
+    .userId {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 11px;
+      text-transform: lowercase;
+      color: #262626;
+    }
+
+    .status {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 11px;
+      color: #8E8E8E;
+
+      padding-top: 0.4rem;
+    }
+
+    .follow-button {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      text-transform: capitalize;
+      color: #0095F6;
+    }
+  }
 `
 
 export const User = styled.div`
